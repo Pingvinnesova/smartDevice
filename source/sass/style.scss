@@ -2,6 +2,7 @@ h1 {
   color: red;
 }
 
-@import url("blocks/fonts");
-@import url("blocks/global");
-@import url("blocks/vars");
+@import "blocks/vars";
+@import "blocks/fonts";
+@import "blocks/global";
+
