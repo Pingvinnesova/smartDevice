@@ -1,2 +1,2 @@
-h1{color:red}
+@import url(blocks/fonts);@import url(blocks/global);@import url(blocks/vars);h1{color:red}
 /*# sourceMappingURL=style.min.css.map */
