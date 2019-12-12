@@ -1,9 +1,10 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  width: 1411px;
+  box-sizing: border-box;
+  padding: 34px 2% 0 2%;
+  max-width: 1411px;
   margin: 0 auto;
-  padding-top: 34px;
   flex-grow: 1;
 }
 
@@ -116,7 +117,8 @@
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    width: 770px;
+    width: 93%;
+    max-width: 950px;
     padding-left: 25px;
     padding-right: 25px;
     margin: 0 auto;
@@ -154,8 +156,8 @@
   .page-header {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
-    margin: 0 auto;
+    width: auto;
+    // margin: 0 auto;
     padding-top: 17px;
     padding-left: 17px;
     padding-right: 17px;

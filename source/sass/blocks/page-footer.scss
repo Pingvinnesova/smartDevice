@@ -1,0 +1,19 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1411px;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+.page-footer__nav li {
+  @include list-reset;
+}
+
+@media (max-width: $tablet-width) {
+
+}
+
+@media (max-width: $mobile-width) {
+
+}
