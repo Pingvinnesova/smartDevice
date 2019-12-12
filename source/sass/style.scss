@@ -1,8 +1,5 @@
-h1 {
-  color: red;
-}
-
 @import "blocks/vars";
 @import "blocks/fonts";
 @import "blocks/global";
-
+@import "blocks/container";
+@import "blocks/page-header";
