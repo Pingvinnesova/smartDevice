@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   padding: 34px 2% 0 2%;
   max-width: 1411px;
   margin: 0 auto;
@@ -115,9 +115,10 @@
 
   .page-header {
     display: flex;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     flex-wrap: wrap;
     width: 93%;
+    flex-grow: 1;
     max-width: 950px;
     padding-left: 25px;
     padding-right: 25px;

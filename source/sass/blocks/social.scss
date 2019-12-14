@@ -1,0 +1,16 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.social__item {
+  padding-right: 16px;
+
+}
+
+@media (max-width: $tablet-width) {
+  .social__item:last-child {
+    padding-right: 0;
+  }
+}

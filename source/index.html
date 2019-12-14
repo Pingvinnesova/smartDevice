@@ -24,15 +24,56 @@
       <a href="#" class="page-header__order-call">Заказать звонок</a>
     </header>
   </div>
-  <div>
+  <main class="page-main">
+    <div class="background">
+      <div class="main-screen">
+        <div class="main-screen__wrapper">
+          <h1 class="main-screen__title">Печатные платы</h1>
+          <p class="main-screen__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <button class="main-screen__button-full" type="button">Получить бесплатную консультацию</button>
+          <button class="main-screen__button-short" type="button">Бесплатная консультация</button>
+          <p class="main-screen__note">Скролл вниз</p>
+        </div>
+        <div class="main-screen__board">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/board-mobile@1x.png 1x, img/board-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/board-tablet@1x.png 1x, img/board-tablet@2x.png 2x">
+            <img class="main-screen__board-image" src="img/board-desktop@1x.png" srcset="img/board-desktop@2x.png 2x" alt="Материнская плата">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="footer-container">
+    <div class="footer-container__line"></div>
     <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/logo.svg" width="52" height="52" alt="Логотип «Smart Device»">
         <div>
-          <p class="page-footer__logo-name">Smart Device</p>
+          <p class="page-footer__logo-name">Service Device</p>
           <p  class="page-footer__logo-translation">умные технологии</p>
         </div>
       </a>
+      <div class="page-footer__nav">
+        <h2 class="page-footer__sections">Разделы сайта</h2>
+        <ul class="page-footer__list">
+          <li><a>О компании</a></li>
+          <li><a>Продукты</a></li>
+          <li><a>Производство печатных плат</a></li>
+          <li><a>Монтаж печатных плат</a></li>
+          <li><a>Комплектующие</a></li>
+          <li><a>Доставка</a></li>
+          <li><a>Контакты</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__adress">
+        <h2 class="page-footer__adress-name">Наш офис</h2>
+        <p>г. Мытищи, Олимпийский проспект, д.10</p>
+        <p>+7 (495) 589-40-50<br>
+          +7 (925) 003-87-67<br>
+          +7 (926) 926-080-79
+        </p>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -55,32 +96,10 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__nav">
-        <h2>Разделы сайта</h2>
-        <ul>
-          <li><a>О компании</a></li>
-          <li><a>Продукты</a></li>
-          <li><a>Производство печатных плат</a></li>
-          <li><a>Монтаж печатных плат</a></li>
-          <li><a>Комплектующие</a></li>
-          <li><a>Доставка</a></li>
-          <li><a>Контакты</a></li>
-        </ul>
-      </div>
-      <div class="page-footer__adress">
-        <h2>Наш офис</h2>
-        <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <p>+7 (495) 589-40-50<br>
-          +7 (925) 003-87-67<br>
-          +7 (926) 926-080-79
-        </p>
-      </div>
-      <div class="page-footer__copyright">
-        <p>Все права защищены</p>
-        <p>1999-2018 SD Service Devices</p>
-        <a href="#">Условия конфиденциальности</a>
-        <a href="#">Developed by wow studio</a>
-      </div>
+      <p class="page-footer__rights">Все права защищены</p>
+      <p class="page-footer__copyright">1999-2018 SD Service Devices</p>
+      <a class="page-footer__conditions" href="#">Условия конфиденциальности</a>
+      <a class="page-footer__studio" href="#">Developed by wow studio</a>
     </footer>
   </div>
 </body>
