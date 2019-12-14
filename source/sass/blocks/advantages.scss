@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/triangle@2x.png");
+    background-image: url("../img/triangles@2x.png");
   }
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 47px 6% 0 6.5%;
+  padding: 111px 6% 0 6.5%;
   box-sizing: border-box;
   max-width: 1411px;
   margin: 0 auto;
@@ -26,11 +26,10 @@
   @include list-reset;
   width: 48.5%;
   box-sizing: border-box;
-  min-height: 299px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid $blue;
   background-color: #FFFFFF;
-  padding: 35px 45px 45px 44px;
+  padding: 35px 45px 25px 44px;
   margin-bottom: 31px;
   &:hover {
     background-color: $blue;
@@ -175,7 +174,7 @@
   }
 
   .advantages__item {
-    padding: 18px 45px 45px 24px;
+    padding: 18px 25px 64px 24px;
     margin-bottom: 31px;
   }
 
@@ -195,5 +194,6 @@
   .advantages__item {
     width: auto;
     margin-bottom: 19px;
+    padding: 18px 25px 45px 24px;
   }
 }

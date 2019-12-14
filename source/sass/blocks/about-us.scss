@@ -1,0 +1,117 @@
+.about-us {
+  display: flex;
+  flex-wrap: nowrap;
+  // box-sizing: border-box;
+  padding: 71px 6% 0 6.5%;
+  box-sizing: border-box;
+  max-width: 1411px;
+  margin: 0 auto;
+  flex-grow: 1;
+  background-color: #FFFFFF;
+}
+
+.about-us__numbers {
+  width: 220px;
+  height: 317px;
+  margin-top: 7px;
+  margin-left: -34px;
+  margin-right: -10px;
+}
+
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  width: 84%;
+}
+
+.about-us__header {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: RobotoCondensed-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.about-us__description {
+  margin: 0;
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.about-us__more {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 15px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 41px 13px 47px;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  color: $blue;
+}
+
+@media (max-width: $tablet-width) {
+  .about-us {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 950px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+  }
+
+  .about-us__header {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-us__numbers {
+    width: 251px;
+    height: 361px;
+    margin-top: -1px;
+    margin-left: -25px;
+    margin-right: -10px;
+  }
+
+  .about-us__numbers img {
+    width: 251px;
+    height: 362px;
+  }
+
+  .about-us__more {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-us {
+    width: auto;
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 5px;
+  }
+
+  .about-us__numbers {
+    display: none;
+  }
+
+  .about-us__header {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
