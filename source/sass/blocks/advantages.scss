@@ -1,0 +1,199 @@
+.advantages {
+  background-color: #FFFFFF;
+  background-image: url("../img/triangles@1x.png");
+  // background-size: 575px 373px;
+  background-repeat: no-repeat;
+  // background-position: center -19px;
+  margin: 0 auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/triangle@2x.png");
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 47px 6% 0 6.5%;
+  box-sizing: border-box;
+  max-width: 1411px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.advantages__item {
+  @include list-reset;
+  width: 48.5%;
+  box-sizing: border-box;
+  min-height: 299px;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid $blue;
+  background-color: #FFFFFF;
+  padding: 35px 45px 45px 44px;
+  margin-bottom: 31px;
+  &:hover {
+    background-color: $blue;
+    .advantages__header,
+    .advantages__description {
+      color: #FFFFFF;
+    }
+    .advantages__header--fast {
+      &::before {
+        background-image: url("../img/icon-stopwatch-white.svg");
+      }
+    }
+    .advantages__header--anonym {
+      &::before {
+        background-image: url("../img/icon-detective-white.svg");
+      }
+    }
+    .advantages__header--cost {
+      &::before {
+        background-image: url("../img/icon-tag-white.svg");
+      }
+    }
+    .advantages__header--big {
+      &::before {
+        background-image: url("../img/icon-hired-white.svg");
+      }
+    }
+  }
+}
+
+.advantages__header,
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__header {
+  position: relative;
+  font-family: RobotoCondensed-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $blue;
+  padding-top: 61px;
+}
+
+.advantages__header--fast {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 29px;
+    height: 35px;
+    background-image: url("../img/icon-stopwatch.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__header--anonym {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 36px;
+    height: 31px;
+    background-image: url("../img/icon-detective.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__header--cost {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-tag.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__header--big {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-hired.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__description {
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  padding-top: 15px;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 950px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+    margin: 0 auto;
+    margin-top: 54px;
+
+
+    // padding: 0 6% 0 6.5%;
+    box-sizing: border-box;
+    // max-width: 1411px;
+    // margin: 0 auto;
+    // margin-top: 53px;
+    flex-grow: 1;
+  }
+
+  .advantages__header {
+    position: relative;
+    font-family: RobotoCondensed-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: $blue;
+    padding: 0;
+    padding-top: 47px;
+    margin: 0;
+  }
+
+  .advantages__item {
+    padding: 18px 45px 45px 24px;
+    margin-bottom: 31px;
+  }
+
+  .advantages__description {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__list {
+    flex-direction: column;
+    margin-top: 36px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .advantages__item {
+    width: auto;
+    margin-bottom: 19px;
+  }
+}
