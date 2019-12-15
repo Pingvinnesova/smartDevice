@@ -1,0 +1,174 @@
+.services {
+  width: 100%;
+  background-color: $dark;
+}
+
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 111px 6% 0 6.5%;
+  box-sizing: border-box;
+  max-width: 1411px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.services__header {
+  font-family: RobotoCondensed-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #FFFFFF;
+}
+
+.services__item {
+  margin: 0;
+  padding: 15px 45px 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: RobotoCondensed-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-right: 30px;
+  width: 370px;
+  // width: 32%;
+  height: 620px;
+    &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.services__list a {
+  text-decoration: none;
+}
+
+.services__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.services__list {
+  display: flex;
+}
+
+.services__item--production {
+  background-image: url("../img/services-1-desktop@1x.png");
+  // background-size: 575px 373px;
+  background-repeat: no-repeat;
+  // background-position: center -19px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/services-1-desktop@2x.png");
+  }
+}
+
+.services__item--install {
+  background-image: url("../img/services-2-desktop@1x.png");
+  // background-size: 575px 373px;
+  background-repeat: no-repeat;
+  // background-position: center -19px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/services-2-desktop@2x.png");
+  }
+}
+
+.services__item--parts {
+  background-image: url("../img/services-3-desktop@1x.png");
+  // background-size: 575px 373px;
+  background-repeat: no-repeat;
+  // background-position: center -19px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/services-3-desktop@2x.png");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    margin: 0;
+    width: 720px;
+    // width: 32%;
+    height: 256px;
+  }
+
+  .services__item--production {
+    background-image: url("../img/services-1-tablet@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-1-tablet@2x.png");
+    }
+  }
+
+  .services__item--install {
+    background-image: url("../img/services-2-tablet@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-2-tablet@2x.png");
+    }
+  }
+
+  .services__item--parts {
+    background-image: url("../img/services-3-tablet@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-3-tablet@2x.png");
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__item {
+    margin: 0;
+    width: 290px;
+    // width: 32%;
+    height: 256px;
+  }
+
+  .services__item--production {
+    background-image: url("../img/services-1-mobile@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-1-mobile@2x.png");
+    }
+  }
+
+  .services__item--install {
+    background-image: url("../img/services-2-mobile@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-2-mobile@2x.png");
+    }
+  }
+
+  .services__item--parts {
+    background-image: url("../img/services-3-mobile@1x.png");
+    // background-size: 575px 373px;
+    background-repeat: no-repeat;
+    // background-position: center -19px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/services-3-mobile@2x.png");
+    }
+  }
+}
