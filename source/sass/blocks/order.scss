@@ -1,0 +1,159 @@
+.order {
+  position: relative;
+  margin: auto;
+  width: 25.4%;
+  // min-height: 605px;
+  background-color: $blue;
+  z-index: 500;
+}
+
+.order__container {
+  box-sizing: border-box;
+  padding: 30px 40px 40px 40px;
+  margin: 0 auto;
+  height: 605px;
+  box-sizing: border-box;
+}
+
+.order__cross {
+  position: absolute;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+}
+
+.order__header {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: RobotoCondensed-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  padding: 0;
+  margin: 0;
+}
+
+.order__description {
+  width: 100%;
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 12px;
+  margin-bottom: 34px;
+}
+
+.order__name,
+.order__number,
+.order__text {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: rgba(#FFFFFF, 0.1);
+  border: none;
+  margin: 0 auto;
+}
+
+.order__name::placeholder,
+.order__number::placeholder,
+.order__text::placeholder {
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+}
+
+.order__name,
+.order__number {
+  height: 51px;
+  padding: 0 10px 5px 22px;
+  margin-bottom: 15px;
+}
+
+.order__text {
+  height: 104px;
+  padding: 10px 10px 10px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.order__question {
+  margin-bottom: 26px;
+}
+
+.order__button {
+  width: 100%;
+  font-family: RobotoCondensed-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 14px 80px 14px 80px;
+  margin: 0 auto;
+}
+
+.order__checkbox {
+  padding-left: 48px;
+  position: relative;
+  font-family: ptmono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(#FFFFFF, 0.8);
+}
+
+.order__check {
+  padding-left: 5px;
+}
+
+.order__check + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+.order__check:checked + label {
+  &::after {
+    content: "";
+    top: 6px;
+    left: 3px;
+    position: absolute;
+    width: 9px;
+    height: 6px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.order__check-container {
+  width: 100%;
+  margin-top: 30px;
+}

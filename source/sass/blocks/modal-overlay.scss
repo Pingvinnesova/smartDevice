@@ -1,0 +1,15 @@
+.modal__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background-color: rgba(#000000, 0.5);
+  overflow-y: auto;
+}
+
+.modal__overlay--show {
+  display: flex;
+}
