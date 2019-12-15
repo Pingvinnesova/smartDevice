@@ -86,6 +86,36 @@
         </div>
       </div>
     </section>
+    <section class="form">
+      <div class="form__container">
+        <div class="form__image"></div>
+        <form class="form__ask" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="form__header">Остались вопросы? Задайте их нам!</h2>
+          <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+          <div class="form__input-container">
+            <p>
+              <label class="visually-hidden" for="form__name">Как вас зовут?</label>
+              <input class="form__name" id="form__name" type="text" name="name" placeholder="Имя">
+            </p>
+            <p>
+              <label class="visually-hidden" for="form__number">Ваш телефон</label>
+              <input class="form__number" id="form__number" type="tel" name="tel" placeholder="Телефон">
+            </p>
+          </div>
+          <p>
+            <label class="visually-hidden" for="form__text">Ваш вопрос</label>
+            <textarea class="form__text" id="form__text" name="text" placeholder="Ваш вопрос"></textarea>
+          </p>
+          <div class="form__total">
+            <button class="form__button" type="submit">Задать вопрос</button>
+            <div class="form__check-container">
+              <input class="visually-hidden form__check" type="checkbox" name="checkbox" id="checkbox" checked>
+              <label for="checkbox" class="form__checkbox">Я согласен на обработку персональных данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
   <div class="footer-container">
     <div class="footer-container__line"></div>
