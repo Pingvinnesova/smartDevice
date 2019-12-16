@@ -1,17 +1,19 @@
 .order {
   position: relative;
   margin: auto;
-  width: 25.4%;
+  // width: 25.4%;
+
   // min-height: 605px;
   background-color: $blue;
-  z-index: 500;
+  z-index: 600;
 }
 
 .order__container {
   box-sizing: border-box;
-  padding: 30px 40px 40px 40px;
+  padding: 30px 40px 50px 40px;
   margin: 0 auto;
-  height: 605px;
+    width: 490px;
+  // height: 605px;
   box-sizing: border-box;
 }
 
@@ -23,6 +25,7 @@
   right: 20px;
   width: 17px;
   height: 17px;
+  cursor: pointer;
 }
 
 .order__header {
@@ -63,6 +66,7 @@
   background-color: rgba(#FFFFFF, 0.1);
   border: none;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .order__name::placeholder,
@@ -111,6 +115,7 @@
   border-radius: 5px;
   padding: 14px 80px 14px 80px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .order__checkbox {
@@ -122,6 +127,7 @@
   font-size: 14px;
   line-height: 16px;
   color: rgba(#FFFFFF, 0.8);
+  cursor: pointer;
 }
 
 .order__check {
@@ -137,6 +143,7 @@
     width: 15px;
     height: 15px;
     border: 1px solid #FFFFFF;
+    cursor: pointer;
   }
 }
 
@@ -155,5 +162,15 @@
 
 .order__check-container {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 36px;
+}
+
+@media (max-width: $tablet-width) {}
+
+@media (max-width: $mobile-width) {
+  .order {
+    width: auto;
+    margin-left: 17px;
+    margin-right: 17px;
+  }
 }

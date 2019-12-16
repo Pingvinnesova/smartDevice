@@ -1,21 +1,11 @@
 .advantages {
-  background-color: #FFFFFF;
-  background-image: url("../img/triangles@1x.png");
-  // background-size: 575px 373px;
-  background-repeat: no-repeat;
-  // background-position: center -19px;
-  margin: 0 auto;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/triangles@2x.png");
-  }
 }
 
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 111px 6% 0 6.5%;
+  padding: 111px 6.5% 0 6.4%;
   box-sizing: border-box;
   max-width: 1411px;
   margin: 0 auto;
@@ -29,8 +19,9 @@
   border: 1px solid #EBEBEB;
   border-left: 3px solid $blue;
   background-color: #FFFFFF;
-  padding: 35px 45px 25px 44px;
+  padding: 35px 45px 64px 40px;
   margin-bottom: 31px;
+  cursor: pointer;
   &:hover {
     background-color: $blue;
     .advantages__header,
@@ -60,6 +51,11 @@
   }
 }
 
+.advantages__item:nth-child(3),
+.advantages__item:nth-child(4) {
+  padding-bottom: 87px;
+}
+
 .advantages__header,
 .advantages__description {
   margin: 0;
@@ -67,7 +63,7 @@
 
 .advantages__header {
   position: relative;
-  font-family: RobotoCondensed-Regular;
+  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -129,7 +125,7 @@
 }
 
 .advantages__description {
-  font-family: ptmono;
+  font-family: 'ptmono', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -162,7 +158,7 @@
 
   .advantages__header {
     position: relative;
-    font-family: RobotoCondensed-Regular;
+    font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -180,6 +176,11 @@
 
   .advantages__description {
     padding-top: 10px;
+  }
+
+  .advantages__item:nth-child(3),
+  .advantages__item:nth-child(4) {
+    padding-bottom: 31px;
   }
 }
 

@@ -6,7 +6,7 @@
 .services__container {
   display: flex;
   flex-wrap: wrap;
-  padding: 111px 6% 0 6.5%;
+  padding: 59px 6% 126px 6.4%;
   box-sizing: border-box;
   max-width: 1411px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
 }
 
 .services__header {
-  font-family: RobotoCondensed-Bold;
+  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -24,10 +24,10 @@
 
 .services__item {
   margin: 0;
-  padding: 15px 45px 0 15px;
+  padding: 75px 137px 0 41px;
   box-sizing: border-box;
   position: relative;
-  font-family: RobotoCondensed-Regular;
+  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -36,7 +36,7 @@
   margin-right: 30px;
   width: 370px;
   // width: 32%;
-  height: 620px;
+  height: 642px;
     &::after {
     content: "";
     position: absolute;
@@ -63,7 +63,7 @@
 
 .services__item--production {
   background-image: url("../img/services-1-desktop@1x.png");
-  // background-size: 575px 373px;
+  background-size: auto 642px;
   background-repeat: no-repeat;
   // background-position: center -19px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -73,7 +73,7 @@
 
 .services__item--install {
   background-image: url("../img/services-2-desktop@1x.png");
-  // background-size: 575px 373px;
+  background-size: auto 642px;
   background-repeat: no-repeat;
   // background-position: center -19px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -83,7 +83,7 @@
 
 .services__item--parts {
   background-image: url("../img/services-3-desktop@1x.png");
-  // background-size: 575px 373px;
+  background-size: auto 642px;
   background-repeat: no-repeat;
   // background-position: center -19px;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -92,6 +92,14 @@
 }
 
 @media (max-width: $tablet-width) {
+
+  .services {
+      width: 100%;
+    max-width: 950px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .services__list {
     flex-direction: column;
   }

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   // box-sizing: border-box;
-  padding: 34px 2% 0 2%;
+  padding: 34px 2.2% 0 2%;
   max-width: 1411px;
   margin: 0 auto;
   flex-grow: 1;
@@ -12,6 +12,7 @@
   display: flex;
   margin-right: auto;
   color: $white;
+  text-decoration: none;
 }
 
 .page-header__logo-name {
@@ -21,7 +22,7 @@
   font-size: 25px;
   line-height: 29px;
   margin: 0;
-  padding-left: 17px;
+  padding-left: 15px;
   padding-top: 4px;
 }
 
@@ -96,12 +97,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: transparent;
   color: $white;
   padding: 14px 28px;
   margin-top: 3px;
   margin-left: 48px;
   border: 1px solid $white;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
@@ -113,6 +116,10 @@
     font-size: 0px;
   }
 
+  .page-header__logo-translation {
+    padding-left: 15px;
+  }
+
   .page-header {
     display: flex;
     // box-sizing: border-box;
@@ -120,8 +127,8 @@
     width: 93%;
     flex-grow: 1;
     max-width: 950px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 19px;
+    padding-right: 20px;
     margin: 0 auto;
     padding-top: 21px;
   }
@@ -131,6 +138,7 @@
   }
 
   .page-header__contacts--mail {
+    padding-left: 38px;
     &::before {
     top: 4px;
     left: 0px;

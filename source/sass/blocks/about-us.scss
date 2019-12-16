@@ -7,7 +7,6 @@
   max-width: 1411px;
   margin: 0 auto;
   flex-grow: 1;
-  background-color: #FFFFFF;
 }
 
 .about-us__numbers {
@@ -27,7 +26,7 @@
 .about-us__header {
   margin: 0;
   margin-bottom: 23px;
-  font-family: RobotoCondensed-Regular;
+  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -37,7 +36,7 @@
 
 .about-us__description {
   margin: 0;
-  font-family: ptmono;
+  font-family: 'ptmono', 'Arial', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -49,7 +48,7 @@
   margin-right: auto;
   margin-top: auto;
   margin-bottom: 15px;
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed', 'Arial', monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -72,7 +71,7 @@
     max-width: 950px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 0;
+    padding-top: 25px;
   }
 
   .about-us__header {
@@ -80,12 +79,18 @@
     line-height: 45px;
   }
 
+  .about-us__container {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: -22px;
+}
+
   .about-us__numbers {
-    width: 251px;
-    height: 361px;
+    width: 285px;
+    height: auto;
     margin-top: -1px;
-    margin-left: -25px;
-    margin-right: -10px;
+    margin-left: -30px;
   }
 
   .about-us__numbers img {
@@ -94,7 +99,7 @@
   }
 
   .about-us__more {
-    margin-bottom: 7px;
+    margin-bottom: 13px;
   }
 }
 
