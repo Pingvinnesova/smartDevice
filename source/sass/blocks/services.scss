@@ -92,12 +92,13 @@
 }
 
 @media (max-width: $tablet-width) {
-
-  .services {
-      width: 100%;
+  .services__container {
+    width: 100%;
     max-width: 950px;
+    padding-top: 23px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 35px
   }
 
   .services__list {
@@ -109,6 +110,10 @@
     width: 720px;
     // width: 32%;
     height: 256px;
+    padding: 39px 465px 0 45px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 45px;
   }
 
   .services__item--production {
@@ -139,6 +144,12 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-3-tablet@2x.png");
     }
+  }
+
+  .services__header {
+    font-size: 33px;
+    line-height: 45px;
+    margin-bottom: 50px;
   }
 }
 
