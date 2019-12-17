@@ -188,13 +188,35 @@
   .advantages__list {
     flex-direction: column;
     margin-top: 36px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 14px;
+    padding-right: 15px;
   }
 
   .advantages__item {
     width: auto;
     margin-bottom: 19px;
-    padding: 18px 25px 45px 24px;
+    padding: 18px 49px 20px 24px;
+  }
+
+  .advantages__header {
+    font-size: 20px;
+    line-height: 38px;
+    padding: 0;
+    padding-top: 47px;
+    margin: 0;
+  }
+
+  .advantages__item:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .advantages__item:nth-child(3),
+  .advantages__item:nth-child(4) {
+    padding-bottom: 13px;
+  }
+
+  .advantages__item:nth-child(4) {
+    padding-right: 10px;
+    padding-bottom: 40px;
   }
 }

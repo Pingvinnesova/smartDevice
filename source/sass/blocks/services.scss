@@ -20,11 +20,12 @@
   font-size: 36px;
   line-height: 51px;
   color: #FFFFFF;
+  margin-bottom: 51px;
 }
 
 .services__item {
   margin: 0;
-  padding: 75px 137px 0 41px;
+  padding: 50px 137px 0 41px;
   box-sizing: border-box;
   position: relative;
   font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
@@ -36,7 +37,7 @@
   margin-right: 30px;
   width: 370px;
   // width: 32%;
-  height: 642px;
+  height: 620px;
     &::after {
     content: "";
     position: absolute;
@@ -107,10 +108,12 @@
 
   .services__item {
     margin: 0;
-    width: 720px;
+    width: 100%;
+    box-sizing: border-box;
+    // width: 719px;
     // width: 32%;
     height: 256px;
-    padding: 39px 465px 0 45px;
+    padding: 39px 481px 0 45px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 45px;
@@ -118,7 +121,7 @@
 
   .services__item--production {
     background-image: url("../img/services-1-tablet@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -128,7 +131,7 @@
 
   .services__item--install {
     background-image: url("../img/services-2-tablet@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -138,8 +141,10 @@
 
   .services__item--parts {
     background-image: url("../img/services-3-tablet@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
+    padding-top: 52px;
+    padding-right: 507px;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-3-tablet@2x.png");
@@ -154,16 +159,42 @@
 }
 
 @media (max-width: $mobile-width) {
+  .services__container {
+    width: auto;
+    align-items: center;
+    padding-top: 22px;
+    padding-left: 26px;
+    padding-right: 19px;
+    margin: 0 auto;
+  }
+
+  .services__item {
+    justify-content: center;
+  }
+
   .services__item {
     margin: 0;
-    width: 290px;
+    width: 100%;
+    // width: 290px;
     // width: 32%;
     height: 256px;
+    padding-right: 55px;
+    padding-left: 23px;
+    padding-top: 19px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .services__header {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 44px;
+    margin-top: 27px;
   }
 
   .services__item--production {
     background-image: url("../img/services-1-mobile@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -173,7 +204,7 @@
 
   .services__item--install {
     background-image: url("../img/services-2-mobile@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -183,7 +214,7 @@
 
   .services__item--parts {
     background-image: url("../img/services-3-mobile@1x.png");
-    // background-size: 575px 373px;
+    background-size: 100% 256px;
     background-repeat: no-repeat;
     // background-position: center -19px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

@@ -5,7 +5,7 @@
 
   // min-height: 605px;
   background-color: $blue;
-  z-index: 600;
+  z-index: 800;
 }
 
 .order__container {
@@ -15,6 +15,7 @@
     width: 490px;
   // height: 605px;
   box-sizing: border-box;
+  z-index: 800;
 }
 
 .order__cross {

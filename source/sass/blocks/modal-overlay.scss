@@ -8,6 +8,7 @@
   flex-direction: column;
   background-color: rgba(#000000, 0.5);
   overflow-y: auto;
+  z-index: 800;
 }
 
 .modal__overlay--show {
