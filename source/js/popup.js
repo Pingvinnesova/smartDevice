@@ -1,4 +1,4 @@
-var callButton = document.querySelector(".page-header__order-call");
+var callButton = document.querySelector(".header__order-call");
 var modalOverlay = document.querySelector(".modal__overlay");
 var crossButton = document.querySelector(".order__cross");
 var orderForm = document.querySelector(".order");
@@ -56,46 +56,3 @@ for (i=0; i<elements.length; i++) {
    };
  })(elements[i]);
 }
-
-
-
-
-// var isStorageSupport = true;
-// var nameStorage = "";
-// var numberStorage = "";
-// var textStorage = "";
-
-// try {
-//   nameStorage = localStorage.getItem("orderName");
-//   numberStorage = localStorage.getItem("orderNumber");
-//   textStorage = localStorage.getItem("orderText");
-// } catch (err) {
-//   isStorageSupport = false;
-// }
-
-// callButton.addEventListener("click", function(evt) {
-//   console.log('click');
-//   evt.preventDefault();
-//   modalOverlay.classList.add("modal-overlay--show");
-//   if (nameStorage) {
-//     orderName.value = nameStorage;
-//     orderNumber.focus();
-//   } else if (numberStorage) {
-//     orderNumber.value = numberStorage;
-//     orderText.focus();
-//   } else if (textStorage) {
-//     orderText.value = textStorage;
-//     orderName.focus();
-//   }
-// });
-
-//
-
-
-// modalOverlay.addEventListener("click", function(evt) {
-//       evt.stopPropagation();
-//   if (modalOverlay.classList.contains("modal-overlay--show")) {
-//       evt.preventDefault();
-//       modalOverlay.classList.remove("modal-overlay--show");
-//     }
-// });

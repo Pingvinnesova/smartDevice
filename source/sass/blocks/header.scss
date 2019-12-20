@@ -1,22 +1,26 @@
-.page-header {
+.header {
   display: flex;
   flex-wrap: wrap;
   // box-sizing: border-box;
-  padding: 34px 2.2% 0 2%;
+  padding: 35px 2.2% 35px 2%;
   max-width: 1411px;
   margin: 0 auto;
   flex-grow: 1;
 }
 
-.page-header__logo {
+.header__logo {
   display: flex;
   margin-right: auto;
   color: $white;
   text-decoration: none;
 }
 
-.page-header__logo-name {
-  font-family: RobotoCondensed-Bold;
+.header__logo img {
+
+}
+
+.header__logo p:first-of-type {
+  font-family: 'RobotoCondensed-Bold', Arial, monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -26,8 +30,8 @@
   padding-top: 4px;
 }
 
-.page-header__logo-translation {
-  font-family: Roboto;
+.header__logo p:nth-of-type(2) {
+  font-family: 'Roboto-Regular', Arial, monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -38,12 +42,14 @@
   padding-top: 2px;
 }
 
-.page-header__contacts {
+.header__contacts {
   display: flex;
-  margin-top: 15px;
+  align-items: center;
+  @include list-reset;
 }
 
-.page-header__contacts a {
+.header__link {
+  position: relative;
   font-family: 'ptmono', Arial, monospace;
   font-style: normal;
   font-weight: normal;
@@ -51,10 +57,18 @@
   line-height: 18px;
   text-decoration: none;
   color: $white;
+  // margin-right: 88px;
 }
 
-.page-header__contacts--mail {
-  position: relative;
+.header__contacts li {
+  margin-right: 88px;
+}
+
+.header__contacts li:last-of-type {
+  margin-right: 48px;
+}
+
+.header__link--mail {
   padding-left: 39px;
   &::before {
     content: "";
@@ -68,10 +82,8 @@
   }
 }
 
-.page-header__contacts--tel {
-  position: relative;
+.header__link--phone {
   padding-left: 34px;
-  margin-left: 88px;
   &::before {
     content: "";
     position: absolute;
@@ -84,10 +96,10 @@
   }
 }
 
-.page-header__order-call {
+.header__order-call {
   display: block;
   box-sizing: border-box;
-  height: 45px;
+  height: 47px;
   font-family: 'RobotoCondensed-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -100,27 +112,27 @@
   background-color: transparent;
   color: $white;
   padding: 14px 28px;
-  margin-top: 3px;
-  margin-left: 48px;
+  align-items: center;
+  // margin-left: 48px;
   border: 1px solid $white;
   border-radius: 8px;
   cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
-  .page-header__contacts {
-    margin-top: 11px;
-  }
-
-  .page-header__contacts a {
+  .header__link {
     font-size: 0px;
   }
 
-  .page-header__logo-translation {
+  .header__logo p:nth-of-type(2) {
     padding-left: 15px;
   }
 
-  .page-header {
+  .header__logo p:first-of-type {
+    padding-top: 6px;
+  }
+
+  .header {
     display: flex;
     // box-sizing: border-box;
     flex-wrap: wrap;
@@ -130,14 +142,15 @@
     padding-left: 19px;
     padding-right: 20px;
     margin: 0 auto;
-    padding-top: 21px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
-  .page-header__order-call {
+  .header__order-call {
     display: none;
   }
 
-  .page-header__contacts--mail {
+  .header__link--mail {
     padding-left: 38px;
     &::before {
     top: 4px;
@@ -148,9 +161,8 @@
     }
   }
 
-  .page-header__contacts--tel {
+  .header__link--phone {
     padding-left: 23px;
-    margin-left: 20px;
     &::before {
       top: 0px;
       right: 0px;
@@ -159,33 +171,56 @@
       background-size: cover;
     }
   }
+
+  .header__contacts {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .header__contacts li {
+    margin-right: 20px;
+  }
+
+  .header__contacts li:last-of-type {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
-  .page-header {
+  .header {
     display: flex;
     flex-wrap: wrap;
     width: auto;
     // margin: 0 auto;
     padding-top: 17px;
+    padding-bottom: 17px;
     padding-left: 17px;
     padding-right: 17px;
   }
 
-  .page-header__logo-image {
+  .header__logo img {
     width: 38px;
     height: 38px;
   }
 
-  .page-header__logo div {
+  .header__logo div {
     display: none;
   }
 
-  .page-header__contacts {
-    margin-top: 4px;
+  .header__contacts li {
+    margin-right: 9px;
   }
 
-  .page-header__contacts--tel {
-    margin-left: 9px;
+  .header__link--mail {
+    &::before {
+    top: -6px;
+    }
   }
+
+  .header__link--phone {
+    &::before {
+      top: -12px;
+    }
+  }
+
 }
