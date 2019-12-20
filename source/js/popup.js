@@ -1,58 +1,60 @@
-var callButton = document.querySelector(".header__order-call");
-var modalOverlay = document.querySelector(".modal__overlay");
-var crossButton = document.querySelector(".order__cross");
-var orderForm = document.querySelector(".order");
-var orderName = document.querySelector(".order__name");
-var orderNumber = document.querySelector(".order__number");
-var orderText = document.querySelector(".order__text");
+'use strict';
 
-var isStorageSupport = true;
-var storage = "";
+var callButton = document.querySelector('.header__order-call');
+var modalOverlay = document.querySelector('.modal__overlay');
+var crossButton = document.querySelector('.order__cross');
+// var orderForm = document.querySelector('.order');
+var orderName = document.querySelector('.order__name');
+// var orderNumber = document.querySelector('.order__number');
+// var orderText = document.querySelector('.order__text');
 
-try {
-  storage = localStorage.getItem("orderName");
-} catch (err) {
-  isStorageSupport = false;
-}
+// var isStorageSupport = true;
+// var storage = '';
 
-callButton.addEventListener("click", function(evt) {
+// try {
+//   storage = localStorage.getItem('orderName');
+// } catch (err) {
+//   isStorageSupport = false;
+// }
+
+callButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modalOverlay.classList.add("modal__overlay--show");
+  modalOverlay.classList.add('modal__overlay--show');
   orderName.focus();
 });
 
-var order = document.querySelector('.order');
-document.addEventListener('mousedown', function(e) {
-    if(e.target.closest('.order') === null) {
-        modalOverlay.classList.remove("modal__overlay--show");
-    }
+// var order = document.querySelector('.order');
+document.addEventListener('mousedown', function (e) {
+  if (e.target.closest('.order') === null) {
+    modalOverlay.classList.remove('modal__overlay--show');
+  }
 });
 
-crossButton.addEventListener("click", function(evt) {
+crossButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  modalOverlay.classList.remove("modal__overlay--show");
+  modalOverlay.classList.remove('modal__overlay--show');
 });
 
-window.addEventListener("keydown", function(evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalOverlay.classList.contains("modal__overlay--show")) {
+    if (modalOverlay.classList.contains('modal__overlay--show')) {
       evt.preventDefault();
-      modalOverlay.classList.remove("modal__overlay--show");
+      modalOverlay.classList.remove('modal__overlay--show');
     }
   }
 });
 
 var elements = document.querySelectorAll('.order__name, .order__number, .order__text');
 
-function checkValidity() {};
+function checkValidity() {}
 
-for (i=0; i<elements.length; i++) {
- (function(element) {
-   var id = element.getAttribute('id');
-   element.value = localStorage.getItem(id); // обязательно наличие у элементов id
-   element.oninput = function() {
-     localStorage.setItem(id, element.value);
-     checkValidity();
-   };
- })(elements[i]);
+for (var i = 0; i < elements.length; i++) {
+  (function (element) {
+    var id = element.getAttribute('id');
+    element.value = localStorage.getItem(id);
+    element.oninput = function () {
+      localStorage.setItem(id, element.value);
+      checkValidity();
+    };
+  })(elements[i]);
 }

@@ -3,7 +3,6 @@
   flex-wrap: nowrap;
   box-sizing: border-box;
   padding: 73px 7% 71px 4.7%;
-  box-sizing: border-box;
   max-width: 1411px;
   margin: 0 auto;
   flex-grow: 1;
@@ -13,9 +12,10 @@
   width: 220px;
   height: 317px;
   background-image: url("../img/numbers-desktop@1x.png");
-  background-size:  220px 317px;
+  background-size: 220px 317px;
   background-repeat: no-repeat;
   background-position: 0 5px;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/numbers-desktop@2x.png");
   }
@@ -31,7 +31,7 @@
 .about-us h2 {
   margin: 0;
   margin-bottom: 21px;
-  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -41,7 +41,7 @@
 
 .about-us p {
   margin: 0;
-  font-family: 'ptmono', 'Arial', monospace;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -62,7 +62,7 @@
 .about-us__more {
   margin-right: auto;
   margin-top: 0;
-  font-family: 'Roboto Condensed', 'Arial', monospace;
+  font-family: "Roboto Condensed", "Arial", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -111,19 +111,20 @@
     flex-direction: column;
     width: 84%;
     margin-left: -28px;
-}
+  }
 
   .about-us__numbers {
     width: 244px;
     height: 362px;
     background-image: url("../img/numbers-tablet@1x.png");
-    background-size:  244px 362px;
+    background-size: 244px 362px;
     background-repeat: no-repeat;
     background-position: -25px 0;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/numbers-tablet@2x.png");
     }
-}
+  }
 
   .about-us__more {
     margin-bottom: 13px;

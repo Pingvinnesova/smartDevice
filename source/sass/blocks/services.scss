@@ -14,18 +14,19 @@
 }
 
 .services h2 {
-  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 52px;
 }
 
 .services__list a {
   margin-right: 30px;
+  text-decoration: none;
 }
 
 .services__list a:nth-child(3n) {
@@ -37,29 +38,26 @@
   padding: 50px 137px 0 41px;
   box-sizing: border-box;
   position: relative;
-  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 370px;
   // width: 32%;
   height: 620px;
-    &::after {
+
+  &::after {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
     width: 63px;
     height: 63px;
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
   }
-}
-
-.services__list a {
-  text-decoration: none;
 }
 
 .services__list {
@@ -103,7 +101,7 @@
     padding-top: 49px;
     padding-left: 25px;
     padding-right: 26px;
-    padding-bottom: 80px
+    padding-bottom: 80px;
   }
 
   .services__list {
@@ -182,7 +180,6 @@
   }
 
   .services__item p {
-    margin: 0;
     width: 100%;
     // width: 290px;
     // width: 32%;
@@ -193,8 +190,6 @@
     padding-bottom: 19px;
     margin: 0 auto;
   }
-
-
 
   .services h2 {
     align-self: flex-end;

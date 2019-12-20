@@ -2,7 +2,6 @@
   position: relative;
   margin: auto;
   // width: 25.4%;
-
   // min-height: 605px;
   background-color: $blue;
   z-index: 800;
@@ -12,9 +11,8 @@
   box-sizing: border-box;
   padding: 30px 40px 50px 40px;
   margin: 0 auto;
-    width: 490px;
+  width: 490px;
   // height: 605px;
-  box-sizing: border-box;
   z-index: 800;
 }
 
@@ -31,8 +29,8 @@
 
 .order__header {
   width: 100%;
-  color: #FFFFFF;
-  font-family: RobotoCondensed-Regular;
+  color: #ffffff;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
@@ -43,12 +41,12 @@
 
 .order__description {
   width: 100%;
-  font-family: ptmono;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 12px;
   margin-bottom: 34px;
 }
@@ -58,13 +56,13 @@
 .order__text {
   width: 100%;
   box-sizing: border-box;
-  font-family: ptmono;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
-  background-color: rgba(#FFFFFF, 0.1);
+  color: #ffffff;
+  background-color: rgba(#ffffff, 0.1);
   border: none;
   margin: 0 auto;
   cursor: pointer;
@@ -73,13 +71,13 @@
 .order__name::placeholder,
 .order__number::placeholder,
 .order__text::placeholder {
-  font-family: ptmono;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   text-overflow: ellipsis;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .order__name,
@@ -102,7 +100,7 @@
 
 .order__button {
   width: 100%;
-  font-family: RobotoCondensed-Bold;
+  font-family: "RobotoCondensed-Bold", "Arial", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -110,9 +108,9 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 14px 80px 14px 80px;
   margin: 0 auto;
@@ -122,12 +120,12 @@
 .order__checkbox {
   padding-left: 48px;
   position: relative;
-  font-family: ptmono;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: rgba(#FFFFFF, 0.8);
+  color: rgba(#ffffff, 0.8);
   cursor: pointer;
 }
 
@@ -143,7 +141,7 @@
     left: -2px;
     width: 15px;
     height: 15px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     cursor: pointer;
   }
 }
@@ -166,7 +164,7 @@
   margin-top: 36px;
 }
 
-@media (max-width: $tablet-width) {}
+// @media (max-width: $tablet-width) {}
 
 @media (max-width: $mobile-width) {
   .order {

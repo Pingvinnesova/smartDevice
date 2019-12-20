@@ -17,43 +17,46 @@
   @include list-reset;
   width: 48.5%;
   box-sizing: border-box;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 35px 45px 64px 40px;
   margin-bottom: 31px;
   cursor: pointer;
-  &:hover {
-    background-color: $blue;
-    h3,
-    p {
-      color: #FFFFFF;
-    }
-  }
 }
 
 .advantages__item:hover {
+  background-color: $blue;
+
+  h3,
+  p {
+    color: #ffffff;
+  }
+
   &:first-of-type h3 {
-      &::before {
-        background-image: url("../img/icon-stopwatch-white.svg");
-      }
-    }
-  &:nth-of-type(2) h3 {
-      &::before {
-        background-image: url("../img/icon-detective-white.svg");
-      }
-    }
-  &:nth-of-type(3) h3 {
-      &::before {
-        background-image: url("../img/icon-tag-white.svg");
-      }
-    }
-  &:nth-of-type(4) h3 {
-      &::before {
-        background-image: url("../img/icon-hired-white.svg");
-      }
+    &::before {
+      background-image: url("../img/icon-stopwatch-white.svg");
     }
   }
+
+  &:nth-of-type(2) h3 {
+    &::before {
+      background-image: url("../img/icon-detective-white.svg");
+    }
+  }
+
+  &:nth-of-type(3) h3 {
+    &::before {
+      background-image: url("../img/icon-tag-white.svg");
+    }
+  }
+
+  &:nth-of-type(4) h3 {
+    &::before {
+      background-image: url("../img/icon-hired-white.svg");
+    }
+  }
+}
 
 .advantages__item:nth-child(3),
 .advantages__item:nth-child(4) {
@@ -67,7 +70,7 @@
 
 .advantages h3 {
   position: relative;
-  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -81,7 +84,7 @@
     content: "";
     position: absolute;
     top: 5px;
-    left: 0px;
+    left: 0;
     width: 29px;
     height: 35px;
     background-image: url("../img/icon-stopwatch.svg");
@@ -94,7 +97,7 @@
     content: "";
     position: absolute;
     top: 4px;
-    left: 0px;
+    left: 0;
     width: 36px;
     height: 31px;
     background-image: url("../img/icon-detective.svg");
@@ -107,7 +110,7 @@
     content: "";
     position: absolute;
     top: 4px;
-    left: 0px;
+    left: 0;
     width: 35px;
     height: 35px;
     background-image: url("../img/icon-tag.svg");
@@ -120,7 +123,7 @@
     content: "";
     position: absolute;
     top: 4px;
-    left: 0px;
+    left: 0;
     width: 35px;
     height: 35px;
     background-image: url("../img/icon-hired.svg");
@@ -128,8 +131,8 @@
   }
 }
 
-.advantages p  {
-  font-family: 'ptmono', 'Arial', monospace;
+.advantages p {
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -162,7 +165,7 @@
 
   .advantages h3 {
     position: relative;
-    font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+    font-family: "RobotoCondensed-Regular", "Arial", monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;

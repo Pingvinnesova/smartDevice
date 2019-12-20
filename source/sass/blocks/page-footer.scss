@@ -32,15 +32,13 @@
 
 .page-footer__logo {
   display: flex;
-  color: #203C42;
+  color: #203c42;
   height: 52px;
-
-
   margin-right: 14.4%;
 }
-  // width: 15.3%;
+
 .page-footer__logo-name {
-  font-family: 'RobotoCondensed-Bold', 'Arial', monospace;
+  font-family: "RobotoCondensed-Bold", "Arial", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -48,12 +46,10 @@
   margin: 0;
   padding-left: 15px;
   padding-top: 4px;
-
-  // margin-right: 205px;
 }
 
 .page-footer__logo-translation {
-  font-family: 'Roboto-Regular', 'Arial', monospace;
+  font-family: "Roboto-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -64,7 +60,8 @@
   padding-top: 2px;
 }
 
-.page-footer__list, .page-footer__adress p {
+.page-footer__list,
+.page-footer__adress p {
   @include list-reset;
   display: flex;
   flex-direction: column;
@@ -72,12 +69,12 @@
   max-height: 100px;
   padding: 0;
   margin: 0;
-  font-family: 'ptmono', 'Arial', monospace;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -86,11 +83,12 @@
   margin-left: auto;
 }
 
-.page-footer__sections, .page-footer__adress-name {
+.page-footer__sections,
+.page-footer__adress-name {
   margin: 0;
   padding-bottom: 24px;
   padding-left: 3px;
-  font-family: 'RobotoCondensed-Regular', 'Arial', monospace;
+  font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -99,13 +97,10 @@
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
 }
 
 .page-footer__social {
-  // position: absolute;
-  // bottom: 105px;
-  // left: 32px;
   width: 131px;
   height: 28px;
   margin-top: -73px;
@@ -118,7 +113,7 @@
 .page-footer__studio {
   margin: 0;
   margin-top: 0;
-  font-family: 'ptmono', 'Arial', monospace;
+  font-family: "ptmono", "Arial", monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -126,7 +121,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
@@ -152,6 +147,8 @@
 @media (max-width: $tablet-width) {
   .page-footer__logo {
     order: 1;
+    margin: 0;
+    padding: 0;
   }
 
   .page-footer__copyright {
@@ -165,6 +162,9 @@
   .page-footer__social {
     order: 3;
     margin: 0;
+    margin-top: 12px;
+    margin-left: auto;
+    width: auto;
   }
 
   .page-footer__nav-wrapper {
@@ -196,18 +196,6 @@
     padding-left: 14px;
   }
 
-  .page-footer__social {
-    margin-top: 12px;
-    margin-left: auto;
-    width: auto;
-  }
-
-  .page-footer__logo {
-    margin: 0;
-    padding: 0;
-    // margin-left: 2px;
-  }
-
   .page-footer__adress {
     width: 482px;
     margin-left: auto;
@@ -231,35 +219,6 @@
   .page-footer__line {
     margin-top: -70px;
   }
-  // .page-footer__copyright {
-  //   order: 2;
-  //   margin: 0;
-  //   padding: 0;
-  //   padding-top: 17px;
-  // }
-
-//   .page-footer__nav {
-//     order: 4;
-//     margin-top: 65px;
-//     margin-left: -3px;
-//   }
-
-//   .page-footer__adress {
-//     order: 5;
-//   }
-
-//    .page-footer__conditions,
-//    .page-footer__studio {
-//       margin-top: 133px;
-//    }
-
-//   .page-footer__conditions {
-//     order: 6;
-//   }
-
-//   .page-footer__studio {
-//     order: 7;
-//   }
 
   .page-footer__rights {
     display: none;
@@ -271,13 +230,6 @@
     height: auto;
     flex-wrap: nowrap;
   }
-
-//   .page-footer__adress {
-//     margin-top: 65px;
-//     margin-left: auto;
-//     margin-right: 11px;
-//   }
-
 }
 
 @media (max-width: $mobile-width) {
@@ -286,7 +238,6 @@
     // margin: 0 auto;
     padding-left: 17px;
     padding-right: 17px;
-
   }
 
   .page-footer__wrapper {
@@ -303,7 +254,7 @@
 
   .page-footer__copyright {
     margin-top: 25px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 0;
   }
 
@@ -330,16 +281,6 @@
     padding-top: 29px;
     border-top: 1px solid rgba(#626962, 0.2);
     border-bottom: 1px solid rgba(#626962, 0.2);
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 26px;
-    //   right: 111px;
-    //   width: 16px;
-    //   height: 16px;
-    //   background-image: url("../img/icon-plus.svg");
-    //   background-repeat: no-repeat;
-    // }
   }
 
   .page-footer__info {
@@ -349,10 +290,11 @@
 
   .page-footer__studio {
     margin-left: 0;
+    padding-bottom: 0;
   }
 
   .page-footer__line {
-  margin-top: -108px;
+    margin-top: -108px;
   }
 
   .page-footer__adress {
@@ -367,16 +309,6 @@
   .page-footer__adress-name {
     position: relative;
     padding-bottom: 32px;
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 4px;
-    //   right: 0px;
-    //   width: 16px;
-    //   height: 1px;
-    //   background-image: url("../img/icon-minus.svg");
-    //   background-repeat: no-repeat;
-    // }
   }
 
   .page-footer__conditions,
@@ -384,80 +316,4 @@
     margin: 0 auto;
     padding-top: 7px;
   }
-
-  .page-footer__studio {
-    padding-bottom: 0;
-  }
 }
-
-//   .page-footer__logo {
-//
-//     margin-left: -43px;
-//   }
-
-//   .page-footer__copyright {
-//     padding-top: 27px;
-//     margin-left: -43px;
-//   }
-
-//   .page-footer__social {
-//     margin-left: -41px;
-//     margin-top: 30px;
-//     margin-bottom: 53px;
-//   }
-
-//   .page-footer__nav,
-//   .page-footer__adress {
-//     padding: 30px 0;
-//     margin: 0;
-//     margin-left: -2px;
-//     align-self: flex-start;
-//   }
-
-//   .page-footer__adress {
-//     padding: 26px 0;
-//     margin-left: -5px;
-//   }
-
-//   .page-footer__sections {
-//     padding: 0;
-//     margin: 0;
-//   }
-
-//   .page-footer__adress-name {
-//     padding-bottom: 32px;
-//     // margin-left: -5px;
-//   }
-
-//   .page-footer__adress p {
-//     margin-left: 5px;
-//     width: 265px;
-//   }
-
-//   .page-footer__logo-name {
-//     margin-right: 0;
-//   }
-
-//   .page-footer__list {
-//     display: none;
-//   }
-
-//   .page-footer__studio {
-//     margin: 0;
-//   }
-
-//   .page-footer__conditions {
-//     margin-top: 29px;
-//     margin-left: -15px;
-//   }
-
-//   .page-footer__studio {
-//     margin-top: 29px;
-//     margin-left: -15px;
-//   }
-
-//   // .page-footer__logo {
-//   //   margin: 0;
-//   //   padding: 0;
-//   // }
-// }
