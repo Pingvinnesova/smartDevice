@@ -8,6 +8,10 @@
   padding-right: 16px;
 }
 
+.social span {
+  @include visually-hidden;
+}
+
 @media (max-width: $tablet-width) {
   .social__item:last-child {
     padding-right: 0;

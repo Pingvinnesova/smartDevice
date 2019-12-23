@@ -50,7 +50,7 @@
   margin-bottom: 37px;
 }
 
-.about-us span:first-of-type {
+.about-us__start-part {
   display: block;
   margin-bottom: 22px;
 }
@@ -98,11 +98,11 @@
     margin-bottom: 39px;
   }
 
-  .about-us span:nth-of-type(2) {
+  .about-us__middle-part {
     margin-bottom: 39px;
   }
 
-  .about-us span:last-of-type {
+  .about-us__end-part {
     display: none;
   }
 
@@ -167,7 +167,7 @@
     padding: 0;
   }
 
-  .about-us span:first-of-type {
+  .about-us__start-part {
     margin-bottom: 40px;
   }
 }

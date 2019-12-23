@@ -15,7 +15,12 @@
   text-decoration: none;
 }
 
-.header__logo p:first-of-type {
+.header p {
+  margin: 0;
+}
+
+.header__name {
+  display: block;
   font-family: "RobotoCondensed-Bold", "Arial", monospace;
   font-style: normal;
   font-weight: bold;
@@ -26,7 +31,8 @@
   padding-top: 4px;
 }
 
-.header__logo p:nth-of-type(2) {
+.header__description {
+  display: block;
   font-family: "Roboto-Regular", "Arial", monospace;
   font-style: normal;
   font-weight: 500;
@@ -54,15 +60,8 @@
   line-height: 18px;
   text-decoration: none;
   color: $white;
-  // margin-right: 88px;
-}
-
-.header__contacts li {
   margin-right: 88px;
-}
-
-.header__contacts li:last-of-type {
-  margin-right: 48px;
+  // margin-right: 88px;
 }
 
 .header__link--mail {
@@ -82,6 +81,7 @@
 
 .header__link--phone {
   padding-left: 34px;
+  margin-right: 48px;
 
   &::before {
     content: "";
@@ -96,9 +96,10 @@
 }
 
 .header__order-call {
-  display: block;
+  width: 181px;
   box-sizing: border-box;
-  height: 47px;
+  display: block;
+  // height: 47px;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -111,7 +112,7 @@
   background-color: transparent;
   color: $white;
   padding: 14px 28px;
-  align-items: center;
+  align-self: flex-start;
   // margin-left: 48px;
   border: 1px solid $white;
   border-radius: 8px;
@@ -121,14 +122,16 @@
 @media (max-width: $tablet-width) {
   .header__link {
     font-size: 0;
+    margin-right: 20px;
   }
 
-  .header__logo p:nth-of-type(2) {
+  .header__name {
     padding-left: 15px;
+    padding-top: 8px;
   }
 
-  .header__logo p:first-of-type {
-    padding-top: 6px;
+  .header__description {
+    padding-top: 2px;
   }
 
   .header {
@@ -163,6 +166,7 @@
 
   .header__link--phone {
     padding-left: 23px;
+    margin-right: 0;
 
     &::before {
       top: 0;
@@ -176,14 +180,6 @@
   .header__contacts {
     padding: 0;
     align-items: flex-start;
-  }
-
-  .header__contacts li {
-    margin-right: 20px;
-  }
-
-  .header__contacts li:last-of-type {
-    margin-right: 0;
   }
 }
 
@@ -208,7 +204,7 @@
     display: none;
   }
 
-  .header__contacts li {
+  .header__link {
     margin-right: 9px;
   }
 
@@ -219,6 +215,8 @@
   }
 
   .header__link--phone {
+    margin-right: 0;
+
     &::before {
       top: -12px;
     }

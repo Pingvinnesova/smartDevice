@@ -188,6 +188,7 @@
   }
 
   .main-screen__wrapper {
+    margin: 0 auto;
     width: 100%;
   }
 
@@ -197,7 +198,7 @@
 
   .main-screen__button-short {
     display: block;
-    width: 100%;
+    width: 288px;
     font-family: "RobotoCondensed-Regular", "Arial", monospace;
     font-style: normal;
     font-weight: bold;

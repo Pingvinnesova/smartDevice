@@ -6,7 +6,7 @@
 .services__container {
   display: flex;
   flex-wrap: wrap;
-  padding: 89px 6% 126px 6.3%;
+  padding: 89px 6% 106px 6.3%;
   box-sizing: border-box;
   max-width: 1411px;
   margin: 0 auto;
@@ -36,6 +36,7 @@
 .services__item p {
   margin: 0;
   padding: 50px 137px 0 41px;
+  margin-bottom: 20px;
   box-sizing: border-box;
   position: relative;
   font-family: "RobotoCondensed-Regular", "Arial", monospace;
@@ -62,6 +63,7 @@
 
 .services__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .services__item--production p {

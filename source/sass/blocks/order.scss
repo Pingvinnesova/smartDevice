@@ -1,4 +1,21 @@
 .order {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  background-color: rgba(#000000, 0.5);
+  overflow-y: auto;
+  z-index: 800;
+}
+
+.order--show {
+  display: flex;
+}
+
+.order__form {
   position: relative;
   margin: auto;
   // width: 25.4%;
@@ -27,7 +44,7 @@
   cursor: pointer;
 }
 
-.order__header {
+.order__form h2 {
   width: 100%;
   color: #ffffff;
   font-family: "RobotoCondensed-Regular", "Arial", monospace;
@@ -51,8 +68,8 @@
   margin-bottom: 34px;
 }
 
-.order__name,
-.order__number,
+.order__name input,
+.order__number input,
 .order__text {
   width: 100%;
   box-sizing: border-box;
@@ -68,8 +85,8 @@
   cursor: pointer;
 }
 
-.order__name::placeholder,
-.order__number::placeholder,
+.order__name input::placeholder,
+.order__number input::placeholder,
 .order__text::placeholder {
   font-family: "ptmono", "Arial", monospace;
   font-style: normal;
@@ -80,8 +97,8 @@
   color: #ffffff;
 }
 
-.order__name,
-.order__number {
+.order__name input,
+.order__number input {
   height: 51px;
   padding: 0 10px 5px 22px;
   margin-bottom: 15px;
@@ -117,7 +134,7 @@
   cursor: pointer;
 }
 
-.order__checkbox {
+.order__check-container label {
   padding-left: 48px;
   position: relative;
   font-family: "ptmono", "Arial", monospace;
@@ -129,7 +146,7 @@
   cursor: pointer;
 }
 
-.order__check {
+.order__check-container input {
   padding-left: 5px;
 }
 
@@ -146,7 +163,7 @@
   }
 }
 
-.order__check:checked + label {
+.order__check-container input:checked + label {
   &::after {
     content: "";
     top: 6px;
@@ -167,7 +184,7 @@
 // @media (max-width: $tablet-width) {}
 
 @media (max-width: $mobile-width) {
-  .order {
+  .order__form {
     width: auto;
     margin-left: 17px;
     margin-right: 17px;
