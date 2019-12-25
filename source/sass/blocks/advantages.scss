@@ -20,7 +20,7 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
   background-color: #ffffff;
-  padding: 35px 45px 64px 40px;
+  padding: 35px 45px 60px 40px;
   margin-bottom: 31px;
   cursor: pointer;
 }
@@ -59,7 +59,7 @@
 }
 
 .advantages__item--tag,
-.advantages__item--hired {
+.advantages__item--detective {
   padding-bottom: 87px;
 }
 
@@ -153,13 +153,7 @@
     padding-top: 0;
     margin: 0 auto;
     margin-top: 54px;
-
-
-    // padding: 0 6% 0 6.5%;
     box-sizing: border-box;
-    // max-width: 1411px;
-    // margin: 0 auto;
-    // margin-top: 53px;
     flex-grow: 1;
   }
 

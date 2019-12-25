@@ -1,47 +1,14 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  // box-sizing: border-box;
   padding: 35px 2.2% 35px 2%;
   max-width: 1411px;
   margin: 0 auto;
   flex-grow: 1;
 }
 
-.header__logo {
-  display: flex;
-  margin-right: auto;
-  color: $white;
-  text-decoration: none;
-}
-
 .header p {
   margin: 0;
-}
-
-.header__name {
-  display: block;
-  font-family: "RobotoCondensed-Bold", "Arial", monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  margin: 0;
-  padding-left: 15px;
-  padding-top: 4px;
-}
-
-.header__description {
-  display: block;
-  font-family: "Roboto-Regular", "Arial", monospace;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: #788891;
-  margin: 0;
-  padding-left: 17px;
-  padding-top: 2px;
 }
 
 .header__contacts {
@@ -61,7 +28,6 @@
   text-decoration: none;
   color: $white;
   margin-right: 88px;
-  // margin-right: 88px;
 }
 
 .header__link--mail {
@@ -99,7 +65,6 @@
   width: 181px;
   box-sizing: border-box;
   display: block;
-  // height: 47px;
   font-family: "RobotoCondensed-Regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -113,7 +78,6 @@
   color: $white;
   padding: 14px 28px;
   align-self: flex-start;
-  // margin-left: 48px;
   border: 1px solid $white;
   border-radius: 8px;
   cursor: pointer;
@@ -125,18 +89,8 @@
     margin-right: 20px;
   }
 
-  .header__name {
-    padding-left: 15px;
-    padding-top: 8px;
-  }
-
-  .header__description {
-    padding-top: 2px;
-  }
-
   .header {
     display: flex;
-    // box-sizing: border-box;
     flex-wrap: wrap;
     width: 93%;
     flex-grow: 1;
@@ -188,20 +142,10 @@
     display: flex;
     flex-wrap: wrap;
     width: auto;
-    // margin: 0 auto;
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 17px;
     padding-right: 17px;
-  }
-
-  .header__logo img {
-    width: 38px;
-    height: 38px;
-  }
-
-  .header__logo div {
-    display: none;
   }
 
   .header__link {
@@ -220,5 +164,14 @@
     &::before {
       top: -12px;
     }
+  }
+
+  .header .logo__wrapper {
+    display: none;
+  }
+
+  .header .logo img {
+    width: 38px;
+    height: 38px;
   }
 }

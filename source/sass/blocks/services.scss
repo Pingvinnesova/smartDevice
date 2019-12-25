@@ -24,17 +24,10 @@
   margin-bottom: 52px;
 }
 
-.services__list a {
-  margin-right: 30px;
-  text-decoration: none;
-}
-
-.services__list a:nth-child(3n) {
-  margin-right: 0;
-}
-
-.services__item p {
+.services__item {
   margin: 0;
+  margin-right: 2.7%;
+  text-decoration: none;
   padding: 50px 137px 0 41px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -45,8 +38,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  width: 370px;
-  // width: 32%;
+  width: 31.4%;
   height: 620px;
 
   &::after {
@@ -61,38 +53,39 @@
   }
 }
 
+.services__item--parts {
+  background-image: url("../img/services-3-desktop@1x.png");
+  background-size: auto 642px;
+  background-repeat: no-repeat;
+  margin-right: 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/services-3-desktop@2x.png");
+  }
+}
+
 .services__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.services__item--production p {
+.services__item--production {
   background-image: url("../img/services-1-desktop@1x.png");
   background-size: auto 642px;
   background-repeat: no-repeat;
-  // background-position: center -19px;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/services-1-desktop@2x.png");
   }
 }
 
-.services__item--install p {
+.services__item--install {
   background-image: url("../img/services-2-desktop@1x.png");
   background-size: auto 642px;
   background-repeat: no-repeat;
-  // background-position: center -19px;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/services-2-desktop@2x.png");
-  }
-}
-
-.services__item--parts p {
-  background-image: url("../img/services-3-desktop@1x.png");
-  background-size: auto 642px;
-  background-repeat: no-repeat;
-  // background-position: center -19px;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/services-3-desktop@2x.png");
   }
 }
 
@@ -108,56 +101,49 @@
 
   .services__list {
     flex-direction: column;
+    width: 100%;
   }
 
-  .services__item p {
+  .services__item {
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-    // width: 719px;
-    // width: 32%;
     height: 256px;
     padding: 39px 481px 0 45px;
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .services__list a {
     margin-right: 0;
     margin-bottom: 45px;
   }
 
-  .services__list a:last-child {
-    margin-bottom: 0;
-  }
-
-  .services__item--production p {
+  .services__item--production {
     background-image: url("../img/services-1-tablet@1x.png");
-    background-size: 100% 256px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    // background-position: center -19px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-1-tablet@2x.png");
     }
   }
 
-  .services__item--install p {
+  .services__item--install {
     background-image: url("../img/services-2-tablet@1x.png");
-    background-size: 100% 256px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    // background-position: center -19px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-2-tablet@2x.png");
     }
   }
 
-  .services__item--parts p {
+  .services__item--parts {
     background-image: url("../img/services-3-tablet@1x.png");
-    background-size: 100% 256px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+    margin-bottom: 0;
     padding-top: 52px;
     padding-right: 507px;
-    // background-position: center -19px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-3-tablet@2x.png");
     }
@@ -177,14 +163,12 @@
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 64px;
+    padding-bottom: 36px;
     margin: 0 auto;
   }
 
-  .services__item p {
+  .services__item {
     width: 100%;
-    // width: 290px;
-    // width: 32%;
     height: 256px;
     padding-right: 63px;
     padding-left: 35px;
@@ -195,39 +179,37 @@
 
   .services h2 {
     align-self: flex-end;
-    // align-items: flex-start;
     font-size: 28px;
     line-height: 39px;
     margin-left: 10px;
     margin-bottom: 44px;
   }
 
-  .services__item--production p {
+  .services__item--production {
     background-image: url("../img/services-1-mobile@1x.png");
-    background-size: 100% 256px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    // background-position: center -19px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-1-mobile@2x.png");
     }
   }
 
-  .services__item--install p {
+  .services__item--install {
     background-image: url("../img/services-2-mobile@1x.png");
-    background-size: 100% 256px;
-    background-repeat: no-repeat;
-    // background-position: center -19px;
+    background-size: 100% auto;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-2-mobile@2x.png");
     }
   }
 
-  .services__item--parts p {
+  .services__item--parts {
     background-image: url("../img/services-3-mobile@1x.png");
-    background-size: 100% 256px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     padding-top: 30px;
-    // background-position: center -19px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/services-3-mobile@2x.png");
     }

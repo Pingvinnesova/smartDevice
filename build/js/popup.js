@@ -3,19 +3,7 @@
 var callButton = document.querySelector('.header__order-call');
 var modalOverlay = document.querySelector('.order');
 var crossButton = document.querySelector('.order__cross');
-// var orderForm = document.querySelector('.order');
 var orderName = document.querySelector('.order__name');
-// var orderNumber = document.querySelector('.order__number');
-// var orderText = document.querySelector('.order__text');
-
-// var isStorageSupport = true;
-// var storage = '';
-
-// try {
-//   storage = localStorage.getItem('orderName');
-// } catch (err) {
-//   isStorageSupport = false;
-// }
 
 callButton.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -23,7 +11,6 @@ callButton.addEventListener('click', function (evt) {
   orderName.focus();
 });
 
-// var order = document.querySelector('.order');
 document.addEventListener('mousedown', function (e) {
   if (e.target.closest('.order') === null) {
     modalOverlay.classList.remove('order--show');

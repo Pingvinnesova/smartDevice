@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  margin-right: auto;
+  color: $white;
+  text-decoration: none;
+}
+
+.logo span {
+  display: block;
+}
+
+.logo__name {
+  display: block;
+  font-family: "RobotoCondensed-Bold", "Arial", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 4px;
+}
+
+.logo__description {
+  display: block;
+  font-family: "Roboto-Regular", "Arial", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+  margin: 0;
+  padding-left: 17px;
+  padding-top: 2px;
+}
+
+@media (max-width: $tablet-width) {
+  .logo__name {
+    padding-left: 15px;
+    padding-top: 8px;
+  }
+
+  .logo__description {
+    padding-top: 2px;
+  }
+}
