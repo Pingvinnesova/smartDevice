@@ -72,7 +72,7 @@
   width: 100%;
 }
 
-.main-screen__button-full {
+.main-screen__button {
   display: block;
   font-family: "RobotoCondensed-Bold", "Arial", monospace;
   font-style: normal;
@@ -92,10 +92,6 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.main-screen__button-short {
-  display: none;
 }
 
 .main-screen__note {
@@ -181,7 +177,7 @@
     margin-bottom: 54px;
   }
 
-  .main-screen__button-full {
+  .main-screen__button {
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 0;
@@ -228,11 +224,7 @@
     padding: 0;
   }
 
-  .main-screen__button-full {
-    display: none;
-  }
-
-  .main-screen__button-short {
+  .main-screen__button {
     display: block;
     width: 288px;
     font-family: "RobotoCondensed-Regular", "Arial", monospace;
