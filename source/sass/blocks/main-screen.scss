@@ -73,6 +73,7 @@
 }
 
 .main-screen__button-full {
+  display: block;
   font-family: "RobotoCondensed-Bold", "Arial", monospace;
   font-style: normal;
   font-weight: bold;
@@ -81,6 +82,7 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   padding-top: 18px;
   padding-bottom: 18px;
