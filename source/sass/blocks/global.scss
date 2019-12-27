@@ -7,6 +7,11 @@ body {
   background-color: #ffffff;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -14,4 +19,10 @@ img {
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+.full-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }

@@ -1,6 +1,7 @@
 .background {
   width: 100%;
   height: auto;
+  flex: 1 0 auto;
   background-color: $dark;
   background-image: url("../img/background@1x.png");
   background-size: cover;

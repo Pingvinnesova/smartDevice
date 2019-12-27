@@ -17,6 +17,7 @@
   max-width: 1206px;
   margin: 0 auto;
   flex-grow: 1;
+  justify-content: flex-end;
 }
 
 
@@ -26,7 +27,6 @@
   background-color: $blue;
   padding: 90px 20px 113px 0;
   width: 570px;
-  margin-left: auto;
 }
 
 .form h2 {
