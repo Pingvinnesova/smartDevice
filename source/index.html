@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Производство и монтаж печатных плат, поставка комплектующих, блоков и модулей"/>
+    <meta name="keywords" content="печатные платы, комплектующие для печатных платб блоки и модули для печатных плат"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -30,7 +32,7 @@
               <h1>Печатные платы</h1>
               <div class="main-screen__description">
                 <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-                <a class="main-screen__button scroll-to" href="#form" type="button">Получить бесплатную консультацию</a>
+                <a class="main-screen__button scroll-to" href="#form">Получить бесплатную консультацию</a>
               </div>
               <a class="main-screen__note scroll-to" href="#advantages">Скролл вниз</a>
             </div>
@@ -141,9 +143,9 @@
                 </div>
               </div>
               <div class="page-footer__nav-wrapper">
-                  <div class="page-footer__nav">
-                      <h2>Разделы сайта</h2>
-                      <ul class="page-footer__list">
+                  <div class="page-footer__nav accordion">
+                      <h2><span class="accordion__plus">Разделы сайта</span></h2>
+                      <ul class="page-footer__list accordion__panel accordion__panel--show">
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Продукты</a></li>
                         <li><a href="#">Производство печатных плат</a></li>
@@ -153,13 +155,15 @@
                         <li><a href="#">Контакты</a></li>
                       </ul>
                   </div>
-                  <div class="page-footer__adress">
-                      <h2>Наш офис</h2>
-                      <p>г. Мытищи, Олимпийский проспект, д.10</p>
-                      <p>+7 (495) 589-40-50<br>
-                        +7 (925) 003-87-67<br>
-                        +7 (926) 926-080-79
-                      </p>
+                  <div class="page-footer__adress accordion">
+                      <h2><span class="accordion__minus">Наш офис</span></h2>
+                      <div class="accordion__panel">
+                        <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                        <p><span class="page-footer__phones">+7 (495) 589-40-50<br>
+                          +7 (925) 003-87-67<br>
+                          +7 (926) 926-080-79</span>
+                        </p>
+                      </div>
                   </div>
               </div>
             </div>
@@ -185,7 +189,7 @@
           </div>
           <div class="order__number">
             <label for="order__number"><span class="visually-hidden">Ваш телефон</span></label>
-            <input id="order__number" type="tel" name="tel" placeholder="Телефон" required>
+            <input id="order__number" type="tel" name="tel" placeholder="Телефон" maxlength="10" required>
           </div>
           <div class="order__question">
             <label for="order__text"><span class="visually-hidden">Ваш вопрос</span></label>
@@ -200,9 +204,8 @@
         <div class="order__cross"></div>
       </form>
     </div>
-    <script src="js/popup.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/button-content.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

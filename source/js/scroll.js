@@ -1,14 +1,18 @@
-const anchors = document.querySelectorAll('a.scroll-to')
+'use strict';
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+var anchors = document.querySelectorAll('a.scroll-to')
 
-    const blockID = anchor.getAttribute('href')
+if (anchors) {
+  for (var anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
 
-    document.querySelector(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+      var blockID = anchor.getAttribute('href')
+
+      document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
     })
-  })
+  }
 }

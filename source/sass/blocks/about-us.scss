@@ -65,6 +65,11 @@
   border: 1px solid $blue;
   border-radius: 5px;
   color: $blue;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
 }
 
 @media (max-width: $tablet-width) {

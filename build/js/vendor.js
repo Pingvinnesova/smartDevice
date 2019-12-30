@@ -1,5 +1,3 @@
-'use strict';
-
 var anchors = document.querySelectorAll('a.scroll-to')
 
 if (anchors) {

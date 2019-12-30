@@ -92,6 +92,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: $blue;
+  }
 }
 
 .main-screen__note {
@@ -107,6 +112,10 @@
   color: #ffffff;
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 .main-screen__board {
@@ -219,8 +228,8 @@
   }
 
   .main-screen__wrapper {
-    margin: 0 auto;
-    width: 300px;
+    margin-right: auto;
+    width: 100%;
     padding: 0;
   }
 

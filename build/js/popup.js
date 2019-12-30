@@ -4,22 +4,28 @@ var callButton = document.querySelector('.header__order-call');
 var modalOverlay = document.querySelector('.order');
 var crossButton = document.querySelector('.order__cross');
 var orderName = document.querySelector('.order__name');
+var body = document.querySelector('body');
 
-callButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalOverlay.classList.add('order--show');
-  orderName.focus();
-});
+if (callButton) {
+  callButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalOverlay.classList.add('order--show');
+    body.classList.add('no-scroll');
+    orderName.focus();
+  });
+}
 
-document.addEventListener('mousedown', function (e) {
-  if (e.target.closest('.order') === null) {
+if (crossButton) {
+  crossButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalOverlay.classList.remove('order--show');
+  });
+}
+
+document.addEventListener('mousedown', function (evt) {
+  if (evt.target.closest('.order') === null) {
     modalOverlay.classList.remove('order--show');
   }
-});
-
-crossButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalOverlay.classList.remove('order--show');
 });
 
 window.addEventListener('keydown', function (evt) {

@@ -10,15 +10,18 @@ var cloneBlock = function () {
     copyright.classList.add('page-footer__copyright--show');
   } else {
     if (wrapper.contains(cloneCopyright)) {
-
       wrapper.removeChild(cloneCopyright);
       copyright.classList.remove('page-footer__copyright--show');
     }
   }
 };
 
-cloneBlock();
+if (copyright || wrapper) {
+  cloneBlock();
+}
 
 window.addEventListener('resize', function () {
-  cloneBlock();
+  if (copyright || wrapper) {
+    cloneBlock();
+  }
 }, false);

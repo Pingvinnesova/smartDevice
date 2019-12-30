@@ -29,6 +29,11 @@
   width: 570px;
 }
 
+.form__ask input,
+.form__ask textarea {
+  border-radius: 0;
+}
+
 .form h2 {
   font-family: "RobotoCondensed-Regular", "Arial", monospace;
   font-style: normal;
@@ -96,6 +101,11 @@
   height: 50px;
   box-sizing: border-box;
   padding: 5px 10px 5px 19px;
+
+  &:hover {
+    background-color: rgba($dark, 0.1);
+    cursor: pointer;
+  }
 }
 
 .form textarea {
@@ -105,6 +115,11 @@
   padding: 14px 10px 10px 18px;
   margin-bottom: 45px;
   resize: none;
+
+  &:hover {
+    background-color: rgba($dark, 0.1);
+    cursor: pointer;
+  }
 }
 
 .form__button {
@@ -122,6 +137,11 @@
   border-radius: 5px;
   padding: 14px 80px 14px 80px;
   cursor: pointer;
+
+  &:hover {
+    color: $blue;
+    background-color: #ffffff;
+  }
 }
 
 .form__checkbox {
@@ -133,6 +153,11 @@
   font-size: 14px;
   line-height: 16px;
   color: rgba(#ffffff, 0.8);
+  cursor: pointer;
+
+  &:hover {
+    color: $dark;
+  }
 }
 
 .form input[type="checkbox"] {
@@ -317,8 +342,10 @@
   }
 
   .form__button {
-    width: 289px;
+    width: 100%;
     padding: 14px 84px;
+    box-sizing: border-box;
+    margin-left: 0;
   }
 
   .form__check-container {

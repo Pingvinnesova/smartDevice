@@ -3,6 +3,10 @@
   margin-right: auto;
   color: $white;
   text-decoration: none;
+
+  &:hover .logo__name {
+    color: $blue;
+  }
 }
 
 .logo span {

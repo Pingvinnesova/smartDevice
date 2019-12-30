@@ -1,0 +1,39 @@
+@media (max-width: $mobile-width) {
+  .accordion__plus {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 17px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .accordion__minus {
+    display: block;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 17px;
+      width: 16px;
+      height: 2px;
+      background-image: url("../img/icon-minus.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .accordion__panel--show {
+    display: none;
+  }
+}

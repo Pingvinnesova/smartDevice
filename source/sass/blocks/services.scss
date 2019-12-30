@@ -51,6 +51,10 @@
     background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    outline: 1px solid $blue;
+  }
 }
 
 .services__item--parts {

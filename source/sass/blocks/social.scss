@@ -12,6 +12,13 @@
   @include visually-hidden;
 }
 
+.social__link {
+  &:hover {
+    outline: 1px solid $blue;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .social__item:last-child {
     padding-right: 0;
